@@ -1,0 +1,9 @@
+
+println("--- Inicio")
+
+task buildarJava() {
+    println("Buildando Java...")
+    println("/tmp é um diretório? ${new File("/tmp").isDirectory() ? 'Verdadeiro':'Falso'}")
+}
+
+println("--- Fim")
