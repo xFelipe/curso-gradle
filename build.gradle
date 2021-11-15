@@ -1,9 +1,10 @@
 
-println("--- Inicio")
+apply plugin: 'java'
 
-task buildarJava() {
-    println("Buildando Java...")
-    println("/tmp é um diretório? ${new File("/tmp").isDirectory() ? 'Verdadeiro':'Falso'}")
+jar {
+    manifest {
+        attributes (
+            'Main-Class': 'Principal'
+        )
+    }
 }
-
-println("--- Fim")
