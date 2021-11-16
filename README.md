@@ -1,3 +1,6 @@
-# Buildar e rodar
+# Buildar, extrair e rodar
 
-- `gradle clean build` && `java -jar build/libs/CursoDeGradle.jar`
+
+`./gradlew clean build -q` &&
+`unzip -q build/distributions/CursoDeGradle.zip -d build/` &&
+`./build/CursoDeGradle/bin/CursoDeGradle TextoHasheadoAqui`
